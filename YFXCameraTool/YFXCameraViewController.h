@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YFXCameraViewController.h
 //  YFXCameraTool
 //
 //  Created by fangxue on 2017/5/23.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface YFXCameraViewController : UIViewController
 
 @end
-
