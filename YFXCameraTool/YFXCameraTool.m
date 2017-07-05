@@ -8,7 +8,7 @@
 #import "YFXCameraTool.h"
 #import "ALAssetsLibrary+CustomPhotoAlbum.h"
 #import "UIImage+FixOrientation.h"
-
+#import "MBProgressHUD+JDragon.h"
 @interface YFXCameraTool()
 
 @property (nonatomic, strong) ALAssetsLibrary *library;
@@ -798,6 +798,9 @@ static const NSString *CameraAdjustingExposureContext;
             dispatch_async(dispatch_get_main_queue(), ^{
                 
                 NSLog(@"保存视频成功");
+                
+                [MBProgressHUD showSuccessMessage:NSLocalizedString(@"保存视频成功", nil)];
+                
             });
         }
         
@@ -815,6 +818,8 @@ static const NSString *CameraAdjustingExposureContext;
             dispatch_async(dispatch_get_main_queue(), ^{
                 
                 NSLog(@"保存照片成功");
+                
+                [MBProgressHUD showSuccessMessage:NSLocalizedString(@"保存照片成功", nil)];
                 
             });
         }

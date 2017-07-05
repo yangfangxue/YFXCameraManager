@@ -18,6 +18,9 @@
 		6A39BA211ED3DDD20005808B /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A39BA201ED3DDD20005808B /* UIImage+FixOrientation.m */; };
 		6A39BA251ED3E27B0005808B /* YFXCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A39BA231ED3E27B0005808B /* YFXCameraViewController.m */; };
 		6A39BA261ED3E27B0005808B /* YFXCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A39BA241ED3E27B0005808B /* YFXCameraViewController.xib */; };
+		6A4B4BFA1F0C90EC000D9660 /* MBProgressHUD+JDragon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6A4B4BF51F0C90EC000D9660 /* MBProgressHUD+JDragon.bundle */; };
+		6A4B4BFB1F0C90EC000D9660 /* MBProgressHUD+JDragon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B4BF71F0C90EC000D9660 /* MBProgressHUD+JDragon.m */; };
+		6A4B4BFC1F0C90EC000D9660 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B4BF91F0C90EC000D9660 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,11 @@
 		6A39BA221ED3E27B0005808B /* YFXCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFXCameraViewController.h; sourceTree = "<group>"; };
 		6A39BA231ED3E27B0005808B /* YFXCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFXCameraViewController.m; sourceTree = "<group>"; };
 		6A39BA241ED3E27B0005808B /* YFXCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YFXCameraViewController.xib; sourceTree = "<group>"; };
+		6A4B4BF51F0C90EC000D9660 /* MBProgressHUD+JDragon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "MBProgressHUD+JDragon.bundle"; sourceTree = "<group>"; };
+		6A4B4BF61F0C90EC000D9660 /* MBProgressHUD+JDragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JDragon.h"; sourceTree = "<group>"; };
+		6A4B4BF71F0C90EC000D9660 /* MBProgressHUD+JDragon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JDragon.m"; sourceTree = "<group>"; };
+		6A4B4BF81F0C90EC000D9660 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		6A4B4BF91F0C90EC000D9660 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,7 @@
 		6A39B9DF1ED3D9CD0005808B /* YFXCameraTool */ = {
 			isa = PBXGroup;
 			children = (
+				6A4B4BF41F0C90EC000D9660 /* MBProgressHUD+JDragon */,
 				6A39B9E31ED3D9CD0005808B /* AppDelegate.h */,
 				6A39B9E41ED3D9CD0005808B /* AppDelegate.m */,
 				6A39BA1C1ED3DC3E0005808B /* ALAssetsLibrary+CustomPhotoAlbum.h */,
@@ -153,6 +162,18 @@
 				6A39BA071ED3D9CD0005808B /* Info.plist */,
 			);
 			path = YFXCameraToolUITests;
+			sourceTree = "<group>";
+		};
+		6A4B4BF41F0C90EC000D9660 /* MBProgressHUD+JDragon */ = {
+			isa = PBXGroup;
+			children = (
+				6A4B4BF51F0C90EC000D9660 /* MBProgressHUD+JDragon.bundle */,
+				6A4B4BF61F0C90EC000D9660 /* MBProgressHUD+JDragon.h */,
+				6A4B4BF71F0C90EC000D9660 /* MBProgressHUD+JDragon.m */,
+				6A4B4BF81F0C90EC000D9660 /* MBProgressHUD.h */,
+				6A4B4BF91F0C90EC000D9660 /* MBProgressHUD.m */,
+			);
+			path = "MBProgressHUD+JDragon";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A39B9F01ED3D9CD0005808B /* LaunchScreen.storyboard in Resources */,
+				6A4B4BFA1F0C90EC000D9660 /* MBProgressHUD+JDragon.bundle in Resources */,
 				6A39B9ED1ED3D9CD0005808B /* Assets.xcassets in Resources */,
 				6A39BA261ED3E27B0005808B /* YFXCameraViewController.xib in Resources */,
 			);
@@ -294,9 +316,11 @@
 				6A39BA251ED3E27B0005808B /* YFXCameraViewController.m in Sources */,
 				6A39BA1E1ED3DC3E0005808B /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				6A39BA1B1ED3DB0F0005808B /* YFXCameraTool.m in Sources */,
+				6A4B4BFB1F0C90EC000D9660 /* MBProgressHUD+JDragon.m in Sources */,
 				6A39B9E51ED3D9CD0005808B /* AppDelegate.m in Sources */,
 				6A39BA211ED3DDD20005808B /* UIImage+FixOrientation.m in Sources */,
 				6A39B9E21ED3D9CD0005808B /* main.m in Sources */,
+				6A4B4BFC1F0C90EC000D9660 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +554,7 @@
 				6A39BA0C1ED3D9CD0005808B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A39BA0D1ED3D9CD0005808B /* Build configuration list for PBXNativeTarget "YFXCameraToolTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +563,7 @@
 				6A39BA0F1ED3D9CD0005808B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A39BA101ED3D9CD0005808B /* Build configuration list for PBXNativeTarget "YFXCameraToolUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +572,7 @@
 				6A39BA121ED3D9CD0005808B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
